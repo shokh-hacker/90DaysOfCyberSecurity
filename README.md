@@ -1,624 +1,1044 @@
 # 🔐 Kiberxavfsizlikni O'rganish - 90 Kunlik To'liq Rejasi
 
-> **Boshlang'ich darajadagi**, amaliy va chuqur mavzularni qamrab oluvchi strukturalashtirilgan cybersecurity o'quv platformasi.
+> **Boshlang'ichdan Advanced'gacha** - Strukturalashtirilgan cybersecurity o'quv platformasi
+
+[![Uzbek](https://img.shields.io/badge/Language-O%27zbek-blue)](README.md)
+[![GitHub Stars](https://img.shields.io/github/stars/shokh-hacker/90DaysOfCyberSecurity?style=social)](https://github.com/shokh-hacker/90DaysOfCyberSecurity)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 ---
 
-## 📚 Mundarija
+## 🚀 TEZKOR START
 
-1. [Boshlang'ichlar uchun yo'l](#-boshlang%C3%A7ichlar-uchun-yo%C3%ADl)
-2. [O'rganish Xaritasi](#-orlanish-xaritasi)
-3. [O'rganish Bosqichlari](#-orlanish-bosqichlari)
-4. [Zarur YouTube Kanallari](#-zarur-youtube-kanallari)
-5. [Tavsiya Qilingan GitHub Repolari](#-tavsiya-qilingan-github-repolari)
-6. [Amaliy Platformalar](#-amaliy-platformalar)
-7. [90 Kunlik Batafsil Reja](#-90-kunlik-batafsil-reja)
+### **Agar siz YANGI bo'lsangiz? Shu yerdan boshlang:**
+
+```
+KUN 1:
+├─ 10 min: Bu README ni o'qing
+├─ 30 min: Linux o'rnatish (VirtualBox/WSL)
+└─ 1 soat: Terminal amaliyoti (Linux Journey)
+
+KUN 2-3:
+├─ 2 soat: Professor Messer Network+ (video 1-3)
+└─ 1 soat: Network basics lab
+
+KUN 4-7:
+├─ 10 soat: Network+ + Security+ asoslari
+└─ 5 soat: Amaliy mashg'ulotlar
+```
+
+**Quyidagi qoidalarga amal qiling:**
+- ✅ Kuniga 2-3 soat o'rganing
+- ✅ Video-lab-video tamosi bilan qiling
+- ✅ Har kuni progess'ni qayd qiling
+- ❌ Bitta mavzuni tugatmasdan keyingi mavzuga o'tmang
 
 ---
 
-## 🎯 Boshlang'ichlar uchun yo'l
+## 📋 MUNDARIJA
 
-### Agar siz kiberxavfsizlikka **yangi** bo'lsangiz, bu bo'limni boshlang:
+1. [⚡ Tezkor Start](#-tezkor-start)
+2. [📚 Bu Repoda Nima Bor?](#-bu-repoda-nima-bor)
+3. [🎯 Sizning Maqsadingiz Bo'yicha Yo'l](#-sizning-maqsadingiz-boyicha-yo)
+4. [📊 Kunlik Progress Tracker](#-kunlik-progress-tracker)
+5. [🛠️ Kerakli Vositalar](#-kerakli-vositalar)
+6. [🏆 Ko'nikma Checklist](#-konikma-checklist)
+7. [📚 Home Lab Setup](#-home-lab-setup)
+8. [❓ FAQ](#-faq)
+9. [📖 Glossary / Atamalar](#-glossary--atamalar)
+10. [💼 Karera Yo'li](#-karera-yoli)
+11. [🎓 Loyihalar](#-loyihalar)
+12. [🤝 Community va Links](#-community-va-links)
 
-**O'rganishning birinchi 4 haftasi:**
+---
 
-| Hafta | Mavzu | Soatlari | Manbalar |
-|-------|-------|---------|----------|
-| **1** | Kompyuter Tarmoqlari Asoslari | 7-10 soat | [Professor Messer Network+](https://youtube.com/playlist?list=PLG49S3nxzAnl_tQe3kvnmeMid0mjF8Le8) |
-| **2** | Xavfsizlik Asoslari | 7-10 soat | [Professor Messer Security+](https://www.youtube.com/watch?v=KiEptGbnEBc&list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv) |
-| **3** | Linux va Buyruq Satri | 8-12 soat | [Linux Journey](https://linuxjourney.com/) + [Linux Unhatched](https://www.netacad.com/courses/linux-unhatched) |
-| **4** | Python Dasturlash | 10-15 soat | [freeCodeCamp Python](https://www.youtube.com/watch?v=rfscVS0vtbw) |
+## 📚 BU REPODA NIMA BOR?
 
-**Muhim:** Birinchi 4 haftada 40-50 soat ajratib qo'ying. Bu asosiy poydevor bo'lib, keyingi hammasi bunga asoslanadi.
+### **90 Kunlik Strukturalashtirilgan Reja:**
 
-### Boshlang'ichning Uchun Eng Yaxshi Tips:
+```
+HAFTA 1-2   → Tarmoq + Xavfsizlik Asoslari     (28 soat)
+HAFTA 3-4   → Linux + Python Basics            (32 soat)
+HAFTA 5-6   → Trafik Tahlili + Wireshark       (30 soat)
+HAFTA 7-8   → Git + ELK Stack                  (28 soat)
+HAFTA 9-10  → Bulut Xavfsizligi                (30 soat)
+HAFTA 11-12 → Pentesting + Ethical Hacking     (35 soat)
+HAFTA 13    → Takrorlash + Portfolio           (20 soat)
+
+JAMI: 180+ soat to'liq o'rganish
+```
+
+### **Nima qo'shilgani:**
+✅ Boshlang'ichlar uchun 7-kunlik plan
+✅ Kunlik progress tracker
+✅ YouTube kanallari (8 ta)
+✅ Amaliy laboratoriyalar
+✅ Home lab setup
+✅ Career roadmap
+✅ FAQ va Glossary
+✅ Tool directory
+
+---
+
+## 🎯 SIZNING MAQSADINGIZ BO'YICHA YO'L
+
+### **1️⃣ ISH TOPISH UCHUN (SOC Analyst / Security Analyst)**
+
+**Talab qilinadigan Ko'nikmalar:**
+- ✓ Networking fundamentals
+- ✓ Linux / Windows administration
+- ✓ SIEM tools (ELK, Splunk)
+- ✓ Log analysis
+- ✓ Incident response
+- ✓ Python scripting (basic)
+
+**Tafsiya Etilgan Yo'l:**
+```
+Hafta 1-4:   Network + Security Basics (40 soat)
+Hafta 5-8:   Linux + Python + ELK (60 soat)
+Hafta 9-10:  Cloud Security (20 soat)
+Hafta 11-13: TryHackMe SOC Analyst track (30 soat)
+
+Jami: ~150 soat
+Vaqt: 3-4 oy
+
+Sertifikat: CompTIA Security+ (tavsiya)
+```
+
+**Praktik Platformalar:**
+- TryHackMe: SOC Analyst Learning Path
+- LabEx: Security labs
+- DigitalOcean: Cloud labs
+
+---
+
+### **2️⃣ BUG BOUNTY UCHUN (Web Security)**
+
+**Talab qilinadigan Ko'nikmalar:**
+- ✓ Web security (OWASP Top 10)
+- ✓ Burp Suite advanced
+- ✓ Network recon tools (nmap, dirsearch)
+- ✓ Python automation
+- ✓ Exploit development (basic)
+
+**Tafsiya Etilgan Yo'l:**
+```
+Hafta 1-3:   Networking Basics (20 soat)
+Hafta 4-5:   Python Intermediate (15 soat)
+Hafta 6-10:  Web Security Deep Dive (50 soat)
+Hafta 11-13: Bug Bounty Practice (40 soat)
+
+Jami: ~125 soat
+Vaqt: 3 oy
+
+Platformalar: HackTheBox, OWASP WebGoat
+```
+
+**Kerakli Vositalar:**
+- Burp Suite Community/Pro
+- OWASP ZAP
+- SQLMap
+- Nmap
+- Gobuster
+
+---
+
+### **3️⃣ RED TEAM / PENTESTER UCHUN**
+
+**Talab qilinadigan Ko'nikmalar:**
+- ✓ Network hacking (nmap, metasploit)
+- ✓ Reverse engineering
+- ✓ Exploitation techniques
+- ✓ Post-exploitation
+- ✓ Python advanced
+
+**Tafsiya Etilgan Yo'l:**
+```
+Hafta 1-4:   Network + Linux (40 soat)
+Hafta 5-8:   Python + Scripting (40 soat)
+Hafta 9-13:  Red Teaming + HTB (60 soat)
+
+Jami: ~140 soat
+Vaqt: 3-4 oy
+
+Sertifikat: CEH yoki OSCP (Advanced)
+```
+
+---
+
+### **4️⃣ BULUT XAVFSIZLIGI UCHUN (Cloud Security)**
+
+**Talab qilinadigan Ko'nikmalar:**
+- ✓ AWS / Azure / GCP fundamentals
+- ✓ IAM va Access Control
+- ✓ Cloud networking
+- ✓ Compliance va governance
+- ✓ Security monitoring
+
+**Tafsiya Etilgan Yo'l:**
+```
+Hafta 1-2:   Networking Basics (15 soat)
+Hafta 3-8:   Linux + Python (40 soat)
+Hafta 9-13:  AWS/Azure/GCP Security (50 soat)
+
+Jami: ~105 soat
+Vaqt: 2-3 oy
+
+Sertifikat: AWS Security Fundamentals
+```
+
+---
+
+### **5️⃣ BLUE TEAM / INCIDENT RESPONSE UCHUN**
+
+**Talab qilinadigan Ko'nikmalar:**
+- ✓ Network analysis (Wireshark)
+- ✓ Log analysis
+- ✓ Malware analysis (basic)
+- ✓ Incident response procedures
+- ✓ Forensics (basic)
+
+**Tafsiya Etilgan Yo'l:**
+```
+Hafta 1-3:   Network + Linux (30 soat)
+Hafta 4-7:   Wireshark + Traffic Analysis (35 soat)
+Hafta 8-12:  Forensics + IR Simulation (50 soat)
+Hafta 13:    TryHackMe IR Track (15 soat)
+
+Jami: ~130 soat
+Vaqt: 3-4 oy
+```
+
+---
+
+## 📊 KUNLIK PROGRESS TRACKER
+
+### **Shaxsiy Progress Sheet Tayyorlash:**
+
+```
+┌─────┬──────────────────┬──────────────────┬──────────┬────────┐
+│ Day │ Topic            │ Resource         │ Task     │ Status │
+├─────┼──────────────────┼──────────────────┼──────────┼────────┤
+│  1  │ Network Basics   │ Prof. Messer (1) │ 2 video  │   ✅   │
+│  2  │ OSI Model        │ Prof. Messer (2) │ Lab 1    │   ✅   │
+│  3  │ IP Addressing    │ Prof. Messer (3) │ Lab 2    │   ⏳   │
+│  4  │ Subnetting       │ Khan Academy     │ Lab 3    │   ⏳   │
+│  5  │ DNS/DHCP         │ Prof. Messer (5) │ Lab 4    │   ❌   │
+│  6  │ Network Security │ Prof. Messer (6) │ Lab 5    │   ⏳   │
+│  7  │ Review & Quiz    │ Professor Messer │ Quiz 1   │   ⏳   │
+└─────┴──────────────────┴──────────────────┴──────────┴────────┘
+
+✅ = Tugatildi
+⏳ = Jarayonda
+❌ = Boshlangani yo'q
+```
+
+**Excel/Google Sheets Template:**
+1. [Boshlang'ichlar Template](https://docs.google.com/spreadsheets/d/example)
+2. [Advanced Template](https://docs.google.com/spreadsheets/d/example)
+
+---
+
+## 🛠️ KERAKLI VOSITALAR
+
+### **TIER 1: ASOSIY VOSITALAR (Boshlang'ichlar uchun)**
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│ TOOL             │ FOYDALANISH        │ O'RNI                │
+├─────────────────────────────────────────────────────────────┤
+│ VirtualBox       │ Virtual machines   │ oracle.com           │
+│ Wireshark        │ Paket tahlili      │ wireshark.org        │
+│ Nmap             │ Port scanning      │ nmap.org             │
+│ Python           │ Scripting          │ python.org           │
+│ Linux Terminal   │ Command line       │ ubuntu.com           │
+│ Burp Suite       │ Web security       │ portswigger.net      │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### **TIER 2: O'RTA DARAJALI VOSITALAR**
+
+```
+Metasploit      → Penetration Testing
+SQLMap          → SQL Injection Testing
+OWASP ZAP       → Web Security Scanning
+Nikto           → Web Server Scanner
+John The Ripper → Password Cracking
+Hashcat        → GPU Password Cracking
+```
+
+### **TIER 3: ADVANSED VOSITALAR**
+
+```
+Volatility      → Memory Forensics
+IDA Pro         → Reverse Engineering
+Ghidra          → Reverse Engineering (bepul)
+YARA            → Malware Detection
+Zeek            → Network Analysis
+Snort/Suricata  → IDS/IPS
+```
+
+### **TIER 4: CLOUD VA OSINT TOOLS**
+
+```
+AWS CLI         → Amazon commands
+Azure CLI       → Microsoft Azure
+Shodan          → IoT/Server search
+Censys          → Certificate Search
+TheHarvester    → Email/Subdomain gathering
+Maltego         → OSINT Collection
+```
+
+---
+
+## 🏆 KO'NIKMA CHECKLIST
+
+### **Boshlang'ich Darajasi (1-4 hafta)**
+
+- [ ] OSI Model va TCP/IP Architecture
+- [ ] IP Addressing va Subnetting
+- [ ] DNS, DHCP, NAT va Routing
+- [ ] Firewall va Access Control
+- [ ] Linux File Systems
+- [ ] Linux User va Permissions
+- [ ] Linux Command Line Tools
+- [ ] Python Basics (Syntax, Functions)
+- [ ] Network Security Concepts
+- [ ] Authentication va Encryption
+
+**Tekshirish:** 50+ soat video + 20+ soat lab
+
+---
+
+### **O'RTA DARAJASI (5-8 hafta)**
+
+- [ ] Wireshark Packet Analysis
+- [ ] TCPdump Commands
+- [ ] Network Protocol Deep Dive
+- [ ] Traffic Pattern Recognition
+- [ ] Git Basics va Workflows
+- [ ] ELK Stack Installation
+- [ ] Log Analysis
+- [ ] Elasticsearch Queries
+- [ ] Kibana Dashboards
+- [ ] Python Network Programming
+- [ ] Regular Expressions (Regex)
+
+**Tekshirish:** 40+ soat video + 30+ soat lab
+
+---
+
+### **ADVANSED DARAJASI (9-13 hafta)**
+
+- [ ] AWS Fundamentals (EC2, S3, VPC)
+- [ ] Azure Cloud Services
+- [ ] Nmap Advanced Scanning
+- [ ] Burp Suite Professional
+- [ ] SQL Injection Testing
+- [ ] XSS va CSRF Attacks
+- [ ] Metasploit Framework
+- [ ] Exploit Development
+- [ ] Post-Exploitation
+- [ ] Incident Response Procedures
+- [ ] Malware Analysis Basics
+
+**Tekshirish:** 50+ soat video + 40+ soat lab
+
+---
+
+## 📚 HOME LAB SETUP
+
+### **1. VIRTUAL MACHINES O'RNATISH**
+
+**Windows bo'lsangiz:**
+```bash
+# VirtualBox o'rnatish
+1. oracle.com/virtualization ga o'ting
+2. VirtualBox uchun .exe ni download qiling
+3. O'rnatish jarayonini boshlang
+
+# Linux VM yaratish
+1. Ubuntu 22.04 LTS iso download qiling
+2. New VM yaratib iso attach qiling
+3. O'rnatish jarayonini boshlang
+```
+
+**Mac/Linux bo'lsangiz:**
+```bash
+# Homebrew orqali o'rnatish
+brew install virtualbox
+
+# Ubuntu VM yaratish
+# Same as above
+```
+
+---
+
+### **2. NETWORKING O'RNATISH**
+
+```
+┌──────────────────────────────────────┐
+│     Host Machine (Windows/Mac)       │
+├──────────────────────────────────────┤
+│                                      │
+│  ┌──────────────┐  ┌──────────────┐ │
+│  │ Ubuntu Linux │  │ Windows 10   │ │
+│  │ (Attacker)   │  │ (Target)     │ │
+│  └──────────────┘  └──────────────┘ │
+│           │              │           │
+│           └──────┬───────┘           │
+│                  │                   │
+│            NAT Network               │
+│                                      │
+└──────────────────────────────────────┘
+```
+
+---
+
+### **3. HOME LAB MINI PROYEKTLARI**
+
+**Proyekt 1: Basic Network Monitoring Lab**
+```
+Vaqt: 1 hafta
+O'rganadi:
+├─ Wireshark o'rnatish
+├─ Network traffic capture
+├─ Packet analysis
+└─ Protocol identification
+
+Tools: Wireshark, tcpdump
+Natija: Traffic analysis report
+```
+
+**Proyekt 2: SIEM Dashboard**
+```
+Vaqt: 2 hafta
+O'rganadi:
+├─ ELK Stack o'rnatish
+├─ Log forwarding
+├─ Elasticsearch queries
+├─ Kibana dashboards
+└─ Alert configuration
+
+Tools: Elasticsearch, Logstash, Kibana
+Natija: Working SIEM dashboard
+```
+
+**Proyekt 3: Web Security Scanner**
+```
+Vaqt: 1 hafta
+O'rganadi:
+├─ Python scripting
+├─ Burp Suite integration
+├─ Vulnerability scanning
+└─ Report generation
+
+Tools: Python, Burp Suite, OWASP ZAP
+Natija: Custom vulnerability scanner
+```
+
+**Proyekt 4: Penetration Testing Lab**
+```
+Vaqt: 2 hafta
+O'rganadi:
+├─ Network reconnaissance
+├─ Vulnerability scanning
+├─ Exploitation
+├─ Post-exploitation
+└─ Reporting
+
+Tools: Nmap, Metasploit, Burp Suite
+Natija: Pentest report
+```
+
+---
+
+### **4. XAVFSIZ O'RGANISH QOIDALARI**
 
 ✅ **Shunday qiling:**
-- Kuniga 2-3 soat o'rganing (sabahga 1 soat, oqshamga 2 soat)
-- Video kuzsatarni qayta-qayta o'rganib, praktik mashq qiling
-- Har kuni not qo'lib progress ko'rib chiqing
-- Online community (Reddit r/cybersecurity, Discord) bilan aloqada bo'ling
+- Lab'ni isolated network'da o'rnatib qo'ying
+- Backup olishni unutmang
+- Snapshot'lar qo'lib qo'ying
+- Zaifliklarni faqat lab'da sinab ko'ring
+- Hamma amaliy qilayotganni qayd qiling
 
 ❌ **Shunday qilmang:**
-- Barcha mavzuni bir vaqtning o'zida tushunishga harakat qilmang
-- Sertifikatsiya imtihoniga bevaqt o'tishga urinmang
-- Kitoblarni butunlay o'qishga vaqt sarflamang, online video'larni kuzating
-- Amaliy mashg'ulotsiz teoriya o'rgashni davom ettirmang
+- Boshqa shaxsning sistemasiga kirishga urinmang
+- Noto'g'ri qo'shilgan exploitlarni ishlatmang
+- Qaydlanmay qo'shilgan hujumlarni qilmang
+- Zaifliklarni public'da e'lon qilmang (responsible disclosure)
+- Lab'ding tashqarisida hacking qilmang
 
 ---
 
-## 📊 O'rganish Xaritasi
+## ❓ FAQ
+
+### **Kibersecurity-da yangi bo'lman, qayerdan boshlashim kerak?**
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                 KIBERXAVFSIZLIK O'RGANISH XARITASI               │
-└─────────────────────────────────────────────────────────────────┘
-
-                    ┏━━━━━━━━━━━━━━━━━━━━━━━━┓
-                    ┃   ASOSIY POYDEVOR      ┃
-                    ┃   (1-4 hafta, 40 soat) ┃
-                    ┣━━━━━━━━━━━━━━━━━━━━━━━━┫
-    ┏───────────────┫ • Tarmoq Asoslari      ┣───────────────┓
-    │               ┃ • Xavfsizlik Asoslari  ┃               │
-    │               ┃ • Linux Buyruqlari     ┃               │
-    │               ┃ • Python Asoslari      ┃               │
-    ▼               ┗━━━━━━━━━━━━━━━━━━━━━━━━┛               ▼
-
-┏─────────────────────────────┐         ┏─────────────────────────────┐
-┃   INTERMEDIATE LEVEL        ┃         ┃   INTERMEDIATE LEVEL        ┃
-┃   (5-8 hafta, 50-60 soat)   ┃         ┃   (5-8 hafta, 50-60 soat)   ┃
-├─────────────────────────────┤         ├─────────────────────────────┤
-│ • Trafik Tahlili (Wireshark)│         │ • Git va Version Control    │
-│ • Packet Analysis           │         │ • ELK Stack (SIEM)          │
-│ • Network Monitoring        │         │ • Log Analysis              │
-│ • Protocol Deep Dive        │         │ • Security Events           │
-└─────────────────────────────┘         └─────────────────────────────┘
-
-                    ┌─────────────────────────────┐
-                    │   ADVANCED LEVEL            │
-                    │   (9-12 hafta, 60-70 soat)  │
-                    ├─────────────────────────────┤
-                    │ • Cloud Security (AWS/Azure)│
-                    │ • Penetration Testing       │
-                    │ • Incident Response         │
-                    │ • Red Team / Blue Team      │
-                    └─────────────────────────────┘
-
-                    ┏━━━━━━━━━━━━━━━━━━━━━━━━┓
-                    ┃   PRAKTIK VA LOYIHALAR ┃
-                    ┣━━━━━━━━━━━━━━━━━━━━━━━━┫
-                    ┃ • TryHackMe (200+ labs) ┃
-                    ┃ • Hack The Box (200+)   ┃
-                    ┃ • Vulnhub (500+)        ┃
-                    ┃ • Home Lab Setup        ┃
-                    ┗━━━━━━━━━━━━━━━━━━━━━━━━┛
-
-                    ┏━━━━━━━━━━━━━━━━━━━━━━━━┓
-                    ┃   ISHGA KIRISH         ┃
-                    ┣━━━━━━━━━━━━━━━━━━━━━━━━┫
-                    ┃ • Portfolio Tayyorlash  ┃
-                    ┃ • CV / Resume Yozish    ┃
-                    ┃ • Interview Tayyorlash  ┃
-                    ┃ • Ish qidirish          ┃
-                    ┗━━━━━━━━━━━━━━━━━━━━━━━━┛
+JAVOB:
+1. Bu README'ning "TEZKOR START" bo'limini o'qing
+2. VirtualBox o'rnatib Linux yozing
+3. Linux Journey'dan 2-3 soat o'rganing
+4. Professor Messer Network+ video'sini ko'ring
+5. Har kuni davom eting
 ```
 
 ---
 
-## 📖 O'rganish Bosqichlari
-
-### **1-BOSQICH: POYDEVOR (Haftalar 1-4) - 40-50 soat**
+### **Nima uchun Python o'rganish kerak?**
 
 ```
-HAFTA 1-2: Tarmoq va Xavfsizlik Asoslari
-├─ IP Manzillari va Subnetting
-├─ DNS, DHCP, HTTP/HTTPS
-├─ Firewall va Access Control
-├─ Authentication va Encryption
-└─ Security Policies
-
-HAFTA 3: Linux Operatsion Tizimi
-├─ File Systems va Permissions
-├─ Command Line Tools
-├─ User Management
-├─ System Administration
-└─ Shell Scripting
-
-HAFTA 4: Python Dasturlash
-├─ Python Syntax va Basics
-├─ Functions va Libraries
-├─ File Handling
-├─ Networking Modules
-└─ Automation Scripts
-```
-
-**Bugungi O'rganish Manbalar:**
-- 🎥 YouTube: Professor Messer (20-25 soat video)
-- 📚 Documentation: Linux Man Pages, Python.org
-- 🖥️ Praktik: LabEx, Codecademy, HackerRank
-
----
-
-### **2-BOSQICH: O'RTA DARAJALI (Haftalar 5-8) - 50-60 soat**
-
-```
-HAFTA 5-6: Trafik Tahlili va Network Monitoring
-├─ Wireshark Basics va Advanced
-├─ Packet Capture va Analysis
-├─ Network Protocols Deep Dive
-├─ TCPdump va Command Line Tools
-└─ Traffic Pattern Recognition
-
-HAFTA 7: Git va Version Control
-├─ Repository Basics
-├─ Branching va Merging
-├─ Collaboration Workflows
-└─ Security Best Practices
-
-HAFTA 8: ELK Stack va SIEM
-├─ Elasticsearch Basics
-├─ Logstash Pipelines
-├─ Kibana Visualization
-├─ Log Analysis
-└─ Security Event Detection
-```
-
-**O'rganish Manbalar:**
-- 🎥 [Wireshark University](https://www.wireshark.org/#educationalContent)
-- 📖 [ELK Stack Complete Guide](https://logz.io/learn/complete-guide-elk-stack/)
-- 🖥️ Praktik: LabEx labs, TryHackMe
-
----
-
-### **3-BOSQICH: ADVANSED (Haftalar 9-12) - 60-70 soat**
-
-```
-HAFTA 9-10: Bulut Xavfsizligi
-├─ AWS Fundamentals
-│  ├─ EC2, S3, VPC
-│  ├─ IAM va Access Control
-│  └─ Security Best Practices
-├─ Azure Security
-├─ GCP Security
-└─ Cloud Compliance
-
-HAFTA 11-12: Penetration Testing va Ethical Hacking
-├─ Network Scanning (Nmap)
-├─ Vulnerability Assessment
-├─ Exploitation Basics
-├─ Social Engineering
-├─ Physical Security
-└─ Incident Response
-```
-
-**O'rganish Manbalar:**
-- ☁️ [AWS Getting Started](https://aws.amazon.com/getting-started/)
-- 🎥 [TryHackMe Advanced Tracks](https://tryhackme.com)
-- 🎯 [Hack The Box](https://hackthebox.com)
-
----
-
-## 📺 Zarur YouTube Kanallari
-
-### **🌟 Eng Yaxshi Kanallar**
-
-1. **[Professor Messer](https://www.youtube.com/c/ProfessorMesser)**
-   - ⭐ **Ishonchli tavsiya**: Network+, Security+, A+ sertifikatsiya
-   - Mahalliy: 400+ video dars
-   - Eng yaxshi qism: Bepul, tez, tushunishga oson
-
-2. **[The Cyber Mentor](https://www.youtube.com/c/TheCyberMentor)**
-   - ⭐ Etik xakerlik va penetration testing
-   - Mahalliy: Ethical Hacking, Web Hacking, Bug Bounty
-   - Eng yaxshi qism: Real-world praktika
-
-3. **[NetworkChuck](https://www.youtube.com/c/NetworkChuck)**
-   - ⭐ Networking va Linux uchun eng sodda
-   - Mahalliy: Cisco CCNA, Security+, Linux
-   - Eng yaxshi qism: Qiziqarli, sodda, har kuni yangi
-
-4. **[John Hammond](https://www.youtube.com/c/JohnHammond010)**
-   - ⭐ CTF va Hacking Challenges
-   - Mahalliy: Bug Bounty Walkthroughs, CTF Write-ups
-   - Eng yaxshi qism: Real vulnerabilities
-
-5. **[LiveOverflow](https://www.youtube.com/c/LiveOverflow)**
-   - ⭐ Deep diving technical topics
-   - Mahalliy: Binary Exploitation, Reverse Engineering
-   - Eng yaxshi qism: In-depth tushunish
-
-6. **[IppSec](https://www.youtube.com/c/IppSec)**
-   - ⭐ Hack The Box machine walkthroughs
-   - Mahalliy: CTF solutions, Hacking Techniques
-   - Eng yaxshi qism: Step-by-step explanations
-
-7. **[Stok](https://www.youtube.com/c/stokfredrik)**
-   - ⭐ Web Security va Bug Bounty
-   - Mahalliy: OWASP, Web Vulnerabilities
-   - Eng yaxshi qism: Praktik web hacking
-
-8. **[SecurityFWD](https://www.youtube.com/c/SecurityFWD)**
-   - ⭐ Cybersecurity career va certifications
-   - Mahalliy: Career guidance, Certifications, Job interviews
-   - Eng yaxshi qism: Karera maslahatlar
-
-### **📚 Takomillashtirish Kanallari**
-
-- [Computerphile](https://www.youtube.com/c/Computerphile) - Computer Science
-- [Defcon](https://www.youtube.com/c/DEFCONConference) - Security Conferences
-- [HackerSploit](https://www.youtube.com/c/HackerSploit) - Hacking Tools
-- [Nahamsec](https://www.youtube.com/c/Nahamsec) - Bug Bounty Tips
-
----
-
-## 🛠️ Tavsiya Qilingan GitHub Repolari
-
-### **📚 O'quv Repolarni**
-
-| Repository | Stars | Tavsif |
-|------------|-------|---------|
-| [90DaysOfCyberSecurity](https://github.com/farhanashrafdev/90DaysOfCyberSecurity) | 19.9K | 90 kunlik cybersecurity study plan |
-| [h4cker](https://github.com/The-Art-of-Hacking/h4cker) | 29.7K | Etik xakerlik va bug bounty resurslar |
-| [Security-101](https://github.com/microsoft/Security-101) | 6.9K | Microsoft tomonidan security darslar |
-| [awesome-ml-for-cybersecurity](https://github.com/jivoi/awesome-ml-for-cybersecurity) | 9.5K | ML + Cybersecurity |
-| [awesome-incident-response](https://github.com/meirwah/awesome-incident-response) | 9.4K | Incident response va forensics |
-
-### **🔧 Amaliy Vositalar**
-
-| Tool | Foydalanish | Link |
-|------|-----------|------|
-| **Wireshark** | Tarmoq paketi tahlili | [wireshark.org](https://www.wireshark.org) |
-| **Burp Suite** | Web hacking | [portswigger.net](https://portswigger.net) |
-| **Metasploit** | Penetration testing | [metasploit.com](https://www.metasploit.com) |
-| **OWASP ZAP** | Web security scanning | [zaproxy.org](https://www.zaproxy.org) |
-| **Nmap** | Port scanning | [nmap.org](https://nmap.org) |
-| **Nikto** | Web server scanner | [cirt.net/nikto2](https://www.cirt.net/nikto2) |
-| **SQLmap** | SQL injection testing | [sqlmap.org](http://sqlmap.org) |
-
-### **🔍 Security Repositorylari**
-
-- [strix](https://github.com/usestrix/strix) - AI pentesting (68K stars)
-- [x64dbg](https://github.com/x64dbg/x64dbg) - Windows debugger (49K stars)
-- [shannon](https://github.com/KeygraphHQ/shannon) - AI pentester (48K stars)
-- [sniffnet](https://github.com/GyulyVGC/sniffnet) - Network monitoring (41K stars)
-- [SafeLine](https://github.com/chaitin/SafeLine) - WAF va reverse proxy (22K stars)
-- [wazuh](https://github.com/wazuh/wazuh) - XDR/SIEM platform (17K stars)
-
----
-
-## 🎯 Amaliy Platformalar
-
-### **📝 Hacking Challenges (CTF)**
-
-| Platform | Qiyinlik | Tavsif | Link |
-|----------|---------|---------|------|
-| **TryHackMe** | Yangi → O'rta | 200+ interactive labs, badges | https://tryhackme.com |
-| **Hack The Box** | O'rta → Qiyin | 300+ machines, real vulnerabilities | https://hackthebox.com |
-| **Vulnhub** | O'rta → Qiyin | 500+ vulnerable VMs | https://vulnhub.com |
-| **PicoCTF** | Yangi → O'rta | Learning-focused CTF | https://picoctf.org |
-| **OverTheWire** | Yangi → O'rta | Wargames va challenges | https://overthewire.org |
-| **Cyber Talents** | O'rta | Arab cybersecurity challenges | https://cybertalents.com |
-
-### **💼 Career Uchun**
-
-- [LinkedIn](https://linkedin.com) - Ish qidirish va networking
-- [Indeed](https://indeed.com) - Cybersecurity ish e'lonlari
-- [CyberSeek](https://www.cyberseek.org) - Career pathways
-- [HackTheBox Jobs](https://www.hackthebox.eu/jobs) - Security jobs
-
----
-
-## 📅 90 Kunlik Batafsil Reja
-
-### **🔵 KUN 1-7: Network+**
-```
-📺 Qo'llanilishi: Professor Messer N10-009
-📝 Mavzular:
-   • OSI va TCP/IP Models
-   • IP Addressing va CIDR
-   • Routing va Switching
-   • DNS, DHCP, NAT
-   • Network Security Basics
-📊 Kunlik: 2-3 soat video + 1 soat praktik
-```
-**Manbalar:**
-- [Professor Messer - N10-009](https://youtube.com/playlist?list=PLG49S3nxzAnl_tQe3kvnmeMid0mjF8Le8)
-- [Cisco NetAcad - Network Basics](https://www.netacad.com)
-
----
-
-### **🔴 KUN 8-14: Security+**
-```
-📺 Qo'llanilishi: Professor Messer SY0-701
-📝 Mavzular:
-   • Security Threats va Vulnerabilities
-   • Access Control (AAA)
-   • Cryptography va Hashing
-   • Network Security
-   • Application Security
-   • Cloud Security
-📊 Kunlik: 2-3 soat video + 1-2 soat praktik
-```
-**Manbalar:**
-- [Professor Messer - SY0-701](https://www.youtube.com/watch?v=KiEptGbnEBc&list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv)
-- [Pete Zerger - SY0-701](https://www.youtube.com/watch?v=1E7pI7PB4KI&list=PL7XJSuT7Dq_UDJgYoQGIW9viwM5hc4C7n)
-
----
-
-### **🟢 KUN 15-28: Linux**
-```
-📺 Qo'llanilishi: Linux Journey + Cisco NetAcad
-📝 Mavzular:
-   • File Systems va Permissions
-   • User va Group Management
-   • Package Managers
-   • Command Line Tools
-   • Shell Scripting Basics
-   • System Administration
-📊 Kunlik: 2-3 soat video + 2-3 soat amaliy
-```
-**Manbalar:**
-- [Linux Journey](https://linuxjourney.com/)
-- [Linux Unhatched - Cisco](https://www.netacad.com/courses/linux-unhatched)
-- [LabEx Linux Labs](https://labex.io/free-labs/linux)
-
----
-
-### **🟣 KUN 29-42: Python**
-```
-📺 Qo'llanilishi: freeCodeCamp + Real Python
-📝 Mavzular:
-   • Python Syntax va Data Types
-   • Functions va Modules
-   • File I/O Operations
-   • Libraries (requests, socket)
-   • Automation Scripts
-   • Regular Expressions
-📊 Kunlik: 2-3 soat video + 2 soat prakik
-```
-**Manbalar:**
-- [freeCodeCamp - Python](https://www.youtube.com/watch?v=rfscVS0vtbw)
-- [Codecademy - Learn Python](https://codecademy.com/learn/learn-python)
-- [Real Python Tutorials](https://realpython.com/)
-- [HackerRank - Python Challenges](https://www.hackerrank.com/domains/python)
-
----
-
-### **🟠 KUN 43-56: Trafik Tahlili**
-```
-📺 Qo'llanilishi: Wireshark University
-📝 Mavzular:
-   • Packet Capture va Analysis
-   • Network Protocols (HTTP, DNS, TCP)
-   • Wireshark Filters va Features
-   • TCPdump Commands
-   • Trafik Patterns
-   • Anomaly Detection
-📊 Kunlik: 2-3 soat video + 2-3 soat lab
-```
-**Manbalar:**
-- [Wireshark University](https://www.wireshark.org/#educationalContent)
-- [Wireshark Tutorial - Guru99](https://guru99.com/wireshark-tutorial.html)
-- [TCPdump Tutorial](https://danielmiessler.com/study/tcpdump/)
-
----
-
-### **🟡 KUN 57-63: Git**
-```
-📺 Qo'llanilishi: Codecademy + Git Immersion
-📝 Mavzular:
-   • Repository Basics
-   • Branching va Merging
-   • Remote Repositories
-   • Collaboration Workflows
-   • Git Security
-📊 Kunlik: 1-2 soat video + 1-2 soat prakik
-```
-**Manbalar:**
-- [Codecademy - Git](https://codecademy.com/learn/learn-git)
-- [Git Immersion](http://gitimmersion.com)
-- [Learn Git Branching](https://learngitbranching.js.org/)
-
----
-
-### **🔵 KUN 64-70: ELK Stack**
-```
-📺 Qo'llanilishi: Logz.io + Elastic
-📝 Mavzular:
-   • Elasticsearch Basics
-   • Logstash Pipelines
-   • Kibana Dashboards
-   • Log Analysis
-   • Security Monitoring
-   • Alert Configuration
-📊 Kunlik: 2-3 soat video + 2-3 soat lab
-```
-**Manbalar:**
-- [ELK Complete Guide](https://logz.io/learn/complete-guide-elk-stack/)
-- [Elastic Documentation](https://www.elastic.co/docs)
-
----
-
-### **🌤️ KUN 71-77: Bulut Xavfsizligi (AWS/Azure/GCP)**
-```
-Bitta tanlang va chuqur o'rganing:
-
-AWS:
-├─ EC2, S3, VPC Fundamentals
-├─ IAM va Access Control
-├─ Security Groups va NACLs
-└─ AWS Security Best Practices
-
-Azure:
-├─ Virtual Machines va Networking
-├─ Azure Active Directory
-├─ Compliance va Governance
-└─ Azure Security Center
-
-GCP:
-├─ Compute Engine va Cloud Storage
-├─ IAM va Service Accounts
-├─ Cloud Security Command Center
-└─ GCP Security Best Practices
-
-📊 Kunlik: 2-3 soat video + 2-3 soat praktik
-```
-
-**Manbalar:**
-- [AWS Getting Started](https://aws.amazon.com/getting-started/)
-- [Azure Fundamentals](https://learn.microsoft.com/en-us/training/azure/)
-- [Google Cloud Learning](https://cloud.google.com/getting-started/)
-
----
-
-### **🔴 KUN 78-84: Review va Praktik**
-```
-Bu hafta barcha mavzularni takrorlang:
-• Weak areas ni identifikatsiya qiling
-• Amaliy masalalarni yechib chiqing
-• Home lab o'rnatish
-
-Platformalar:
-├─ TryHackMe Easy/Medium rooms
-├─ VirtualBox/VMware home lab
-├─ Mini penetration testing project
-└─ Community forums da savollar sorang
-
-📊 Kunlik: 3-4 soat
+JAVOB:
+- Automation scriptlari yozish
+- Network tools yaratish
+- Malware analysis
+- Security tool development
+- Hamma penetration tester'lar Python biladi
 ```
 
 ---
 
-### **🟣 KUN 85-90: Ethical Hacking**
+### **TryHackMe yoki Hack The Box? Qaysi biri avval?**
+
 ```
-📝 Mavzular:
-   • Network Scanning (Nmap)
-   • Vulnerability Assessment
-   • Exploitation Basics
-   • Social Engineering
-   • Physical Security
-   • Incident Response
+JAVOB:
+BOSHLANG'ICHLAR:   TryHackMe (30+ soat)
+                   └─ Qaniqalik, step-by-step
 
-Platformalar:
-├─ Hack The Box (10+ machines)
-├─ Vulnhub (5-10 machines)
-├─ TryHackMe Advanced
-└─ CyberTalents Challenges
+O'RTA DARAJALI:    TryHackMe (40+ soat)
+                   └─ Challenge rooms
 
-📊 Kunlik: 4-5 soat (amaliy)
-```
+ADVANSED:          Hack The Box (50+ soat)
+                   └─ Qiyinroq, real-world
 
-**Manbalar:**
-- [Hack The Box](https://hackthebox.com)
-- [Vulnhub](https://vulnhub.com)
-- [The Cyber Mentor - Ethical Hacking](https://www.youtube.com/c/TheCyberMentor)
-
----
-
-### **💼 KUN 91-95: Karera Tayyorlash**
-
-**KUN 91-92: Resume/CV Tayyorlash**
-```
-Shablonlar:
-- [BowTiedCyber Resume Template](https://bowtiedcyber.substack.com/p/killer-cyber-resume-part-ii)
-- [Indeed Cybersecurity Resume](https://www.indeed.com/career-advice/resumes-cover-letters/cybersecurity-resume)
-
-Kiritadigan ma'lumotlar:
-✓ TryHackMe/HTB achievements
-✓ Completed labs va projects
-✓ Certifications (if any)
-✓ GitHub portfolio
-✓ Contact info
-```
-
-**KUN 93-95: Ish Qidirish**
-```
-Platformalar:
-├─ LinkedIn (networking)
-├─ Indeed (job postings)
-├─ CyberSeek (career pathways)
-├─ TargetJobs (UK)
-└─ LinkedIn Learning (cert prep)
-
-Tayyorlik:
-✓ Portfolio yaratish
-✓ GitHub profili to'ldirish
-✓ Interview uchun tayyorlanish
-✓ 10-15 ta CV tayyor qo'yish
+TAVSIYA: IKKALASI'NI HAM QILING!
 ```
 
 ---
 
-## 📊 Haftalik Jadval Namunasi
+### **Sertifikat kerakmi?**
 
 ```
-HAFTA 1 JADVAL:
-Dushanba:  1.5 soat video + 30 min lab
-Selisi:    1.5 soat video + 30 min lab
-Chorshanba: 2 soat video + 1 soat lab
-Payshanba: 1 soat video + 1.5 soat lab
-Juma:      1 soat video + 1 soat lab
-Shanba:    1.5 soat review + 2 soat challenging lab
-Yakshanba: 1 soat review + 1 soat preview next week
+JAVOB: KERAK, BET PORTFOLIO'DAN KO'P EMAS
 
-JAMI: 12-13 soat/hafta
+Tavsiya Etilgan Sertifikatlar:
+1. CompTIA Security+ (Entry-level)
+2. AWS Security Fundamentals (Cloud)
+3. CEH - Certified Ethical Hacker (Mid-level)
+4. OSCP - Offensive Security Certified Pro (Advanced)
+
+Porfolio Muhimiyati: 90%
+Sertifikat Muhimiyati: 60%
 ```
 
 ---
 
-## ✅ Muvaffaqiyat Uchun Qoidalar
+### **Necha kunning o'zida tugataman?**
 
-1. **Tartibni buzmayin qo'ying** - Asoslar poydevorsiz advansed mavzularni tushunish mumkin emas
-2. **Har kuni qiling** - Nomi o'qitish uchun 15 min har kuni 2 soat yangi o'rganishdan yaxshi
-3. **Amaliyni unutmang** - Video ko'rish yetarli emas, siz code yozib va masalalarni yechishingiz kerak
-4. **Shaxsiy loyihalar quring** - GitHub'da o'zingizning tools va scripts'lar joylashtiring
-5. **Jamiyat bilan bog'laning** - r/cybersecurity, Discord servers, local meetups
+```
+JAVOB: HAMMA'NIN VAQTI BOSHQACHA
 
----
+Tez: 2-3 oy (kuniga 5-6 soat)
+Normal: 3-4 oy (kuniga 2-3 soat) ✅ TAVSIYA
+Sekin: 6-8 oy (kuniga 1-2 soat)
 
-## 🎓 Sertifikatsiyalar (Optional)
-
-Agar siz sertifikat olmoqchi bo'lsangiz:
-
-| Sertifikat | Qiyinlik | Tavsif | Narx |
-|-----------|----------|---------|------|
-| **CompTIA A+** | Boshlang'ich | Hardware, OS basics | $226 |
-| **CompTIA Network+** | Boshlang'ich | Networking fundamentals | $226 |
-| **CompTIA Security+** | O'rta | Information security | $226 |
-| **CEH (Certified Ethical Hacker)** | O'rta-Qiyin | Ethical hacking | $1000+ |
-| **OSCP** | Qiyin | Penetration testing | $999 |
+MUHIM: Tezlik emas, tushunish muhim!
+```
 
 ---
 
-## 🌟 Muhim Linklar
+### **Ish topishdan oldin nima qilishim kerak?**
 
-### Davlat va Rahbariyat
+```
+JAVOB:
+
+1. PORTFOLIO YARATISH
+   ├─ GitHub profili to'ldirish
+   ├─ 5-10 ta project yuklash
+   ├─ README fayllar yozish
+   └─ Code comments qo'shish
+
+2. RESUME YOZISH
+   ├─ TryHackMe/HTB achievements
+   ├─ Completed labs
+   ├─ Technical skills
+   ├─ Personal projects
+   └─ Certifications (agar bor)
+
+3. INTERVIEW TAYYORLASH
+   ├─ Common questions'ga javob tayyorlash
+   ├─ Technical scenarios practice
+   ├─ Your story rehearse qilish
+   └─ Questions sohasi o'rganish
+
+4. NETWORKING
+   ├─ LinkedIn optimize qilish
+   ├─ Security communities'ga qo'shilish
+   ├─ Locals bilan muloqot
+   └─ Career fairs'ga borish
+```
+
+---
+
+### **Agar biror joyda takillansa?**
+
+```
+JAVOB:
+
+1. INTERNET'DA IZLASH
+   ├─ Stack Overflow
+   ├─ GitHub issues
+   ├─ Documentation
+   └─ YouTube
+
+2. COMMUNITY'GA SORANG
+   ├─ r/cybersecurity (Reddit)
+   ├─ TryHackMe Forum
+   ├─ Discord servers
+   └─ Local meetups
+
+3. MENTOR TOPISH
+   ├─ GitHub'da senior'lar izlash
+   ├─ Twitter'da followlash
+   ├─ Udemy kurs'larida o'qituvchiga yozish
+   └─ Local security groups
+
+4. SABR QILISH
+   - Kiberxavfsizlik qiyindir!
+   - Hamma takil bo'ladi
+   - Bu normal
+   - Davom eting!
+```
+
+---
+
+## 📖 GLOSSARY / ATAMALAR
+
+### **A**
+- **AAA** - Authentication, Authorization, Accounting
+- **ACL** - Access Control List
+- **API** - Application Programming Interface
+- **APT** - Advanced Persistent Threat
+
+### **B**
+- **Blue Team** - Defensive security team
+- **Burp Suite** - Web security testing tool
+- **Bug Bounty** - Reward program for finding vulnerabilities
+
+### **C**
+- **CVE** - Common Vulnerabilities and Exposures
+- **CVSS** - Common Vulnerability Scoring System
+- **CIA Triad** - Confidentiality, Integrity, Availability
+- **Compliance** - Following security standards
+
+### **D**
+- **DFIR** - Digital Forensics and Incident Response
+- **DDoS** - Distributed Denial of Service
+- **DNS** - Domain Name System
+
+### **E**
+- **Encryption** - Converting data to code
+- **Exploit** - Attack that takes advantage of a vulnerability
+- **Exfiltration** - Data theft
+
+### **F**
+- **Firewall** - Network security barrier
+- **Forensics** - Digital evidence analysis
+- **Full Disk Encryption** - FDE
+
+### **G**
+- **Golden Ticket** - Forged Kerberos ticket
+- **Group Policy** - Windows security configuration
+
+### **H**
+- **Honeypot** - Decoy system to catch attackers
+- **Hash** - One-way encryption function
+
+### **I**
+- **IAM** - Identity and Access Management
+- **IDS** - Intrusion Detection System
+- **IPS** - Intrusion Prevention System
+- **Incident Response** - Security breach response procedure
+
+### **J**
+- **JTag** - Hardware debugging interface
+
+### **K**
+- **Kerberos** - Network authentication protocol
+
+### **L**
+- **Log** - Record of events
+- **Lateral Movement** - Moving between systems
+
+### **M**
+- **Malware** - Malicious software
+- **MITRE ATT&CK** - Adversary tactics database
+- **MFA** - Multi-Factor Authentication
+
+### **N**
+- **NAT** - Network Address Translation
+- **Network Segmentation** - Dividing network into sections
+- **NIST** - National Institute of Standards and Technology
+
+### **O**
+- **OWASP** - Open Web Application Security Project
+- **OSINT** - Open-Source Intelligence
+
+### **P**
+- **Penetration Testing** - Authorized security testing
+- **Phishing** - Social engineering attack
+- **Payload** - Attack code
+
+### **Q**
+- **QoS** - Quality of Service
+
+### **R**
+- **Red Team** - Offensive security team
+- **Ransomware** - Encryption extortion malware
+- **Reverse Shell** - Remote code execution shell
+
+### **S**
+- **SOC** - Security Operations Center
+- **SIEM** - Security Information and Event Management
+- **Shellcode** - Machine code for exploitation
+- **Social Engineering** - Human-based attack
+
+### **T**
+- **Threat Intelligence** - Information about threats
+- **Trojan** - Disguised malware
+- **Two-Factor Authentication** - 2FA
+
+### **U**
+- **UDP** - User Datagram Protocol
+- **UAC** - User Account Control
+
+### **V**
+- **Vulnerability** - Security weakness
+- **VLAN** - Virtual Local Area Network
+- **VPN** - Virtual Private Network
+
+### **W**
+- **WAF** - Web Application Firewall
+- **Whitelist** - Approved items list
+- **Wireshark** - Network analyzer tool
+
+### **X**
+- **XSS** - Cross-Site Scripting
+
+### **Y**
+- **YARA** - Malware identification tool
+
+### **Z**
+- **Zero Trust** - Never trust, always verify
+- **Zero-Day** - Unreported vulnerability
+
+---
+
+## 💼 KARERA YO'LI
+
+### **Boshlang'ich Darajasi (0-2 yil)**
+
+```
+┌─────────────────────────────────────────┐
+│   Junior Security Analyst / SOC Level 1 │
+├─────────────────────────────────────────┤
+│ Talab:                                  │
+│ • Security+ sertifikat                  │
+│ • 1-2 yil SOC tajribasi                 │
+│ • Log analysis                          │
+│ • Alert investigation                   │
+│                                         │
+│ Maosh: $45,000 - $65,000/yil           │
+└─────────────────────────────────────────┘
+```
+
+### **O'RTA DARAJASI (2-5 yil)**
+
+```
+Variant 1: SOC Analyst → SOC Level 2/3
+├─ SIEM Advanced
+├─ Incident Response
+├─ Threat Hunting
+└─ Maosh: $65,000 - $95,000
+
+Variant 2: Web Security Specialist
+├─ Burp Suite Pro
+├─ OWASP Top 10 Mastery
+├─ Bug Bounty Success
+└─ Maosh: $70,000 - $100,000
+
+Variant 3: Cloud Security Engineer
+├─ AWS/Azure Certifications
+├─ IAM Deep Knowledge
+├─ Compliance
+└─ Maosh: $80,000 - $110,000
+```
+
+### **ADVANSED DARAJASI (5+ yil)**
+
+```
+Variant 1: Penetration Tester / Red Teamer
+├─ CEH/OSCP
+├─ Exploitation skills
+├─ Full pentest cycle
+└─ Maosh: $100,000 - $150,000+
+
+Variant 2: Security Architect
+├─ Enterprise security design
+├─ Risk management
+├─ Compliance frameworks
+└─ Maosh: $110,000 - $160,000+
+
+Variant 3: Threat Intelligence Analyst
+├─ APT analysis
+├─ Indicator research
+├─ Report writing
+└─ Maosh: $85,000 - $130,000+
+
+Variant 4: Incident Response Manager
+├─ IR leadership
+├─ Forensics
+├─ Crisis management
+└─ Maosh: $100,000 - $150,000+
+```
+
+---
+
+## 🎓 LOYIHALAR
+
+### **1. Network Monitoring Dashboard**
+```
+Vaqt: 1 hafta
+Qiyinlik: Boshlang'ich
+Stack: Python + Wireshark + Graphana
+Natija: Real-time traffic monitoring
+GitHub: Repository qo'ying
+```
+
+### **2. Vulnerability Scanner Tool**
+```
+Vaqt: 2 hafta
+Qiyinlik: O'rta
+Stack: Python + Nmap + SQL Injection testing
+Natija: Automated scanner tool
+GitHub: Open-source qiling
+```
+
+### **3. Log Analysis Automation**
+```
+Vaqt: 1.5 hafta
+Qiyinlik: O'rta
+Stack: Python + ELK Stack + Regex
+Natija: Automated log parsing va alerting
+GitHub: CI/CD pipeline qo'ying
+```
+
+### **4. Home Lab Documentation**
+```
+Vaqt: 1 hafta
+Qiyinlik: Boshlang'ich
+Stack: Markdown + Diagrams
+Natija: Setup guide + Troubleshooting
+GitHub: Wiki o'rnatish
+```
+
+### **5. Security Compliance Checker**
+```
+Vaqt: 2 hafta
+Qiyinlik: O'rta-Advansed
+Stack: Python + NIST/CIS frameworks
+Natija: Compliance validation tool
+GitHub: Organizations uchun useful
+```
+
+### **6. Malware Analysis Report**
+```
+Vaqt: 3 hafta
+Qiyinlik: Advansed
+Stack: Wireshark + IDA + VirusTotal
+Natija: Detailed analysis report
+GitHub: Research share qiling
+```
+
+---
+
+## 🤝 COMMUNITY VA LINKS
+
+### **📱 Social Communities**
+
+| Platform | Link | Tavsifi |
+|----------|------|---------|
+| **Reddit** | r/cybersecurity | 300K+ members |
+| **Reddit** | r/learnprogramming | Programming help |
+| **Discord** | TryHackMe Server | 50K+ active |
+| **Discord** | Hack The Box | 100K+ members |
+| **Twitter** | #cybersecurity | Industry updates |
+
+### **💬 Security Newsletters**
+
+- [Krebs on Security](https://krebsonsecurity.com/) - Weekly roundup
+- [Dark Reading](https://www.darkreading.com/) - Industry news
+- [SecurityWeekly](https://securityweekly.com/) - Podcast + news
+
+### **📚 Documentation**
+
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
-- [MITRE ATT&CK](https://attack.mitre.org/)
-- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
-- [CIS Controls](https://www.cisecurity.org/cis-controls)
+- [MITRE ATT&CK](https://attack.mitre.org/) - Tactics database
+- [OWASP Top 10](https://owasp.org/) - Web vulnerabilities
+- [CIS Controls](https://www.cisecurity.org/) - Security standards
 
-### Xhabarnomalar va Yangiliklar
-- [Krebs on Security](https://krebsonsecurity.com/)
-- [Dark Reading](https://www.darkreading.com/)
-- [SecurityWeekly](https://securityweekly.com/)
-- [The Hacker News](https://thehackernews.com/)
+### **🎥 YouTube Channels**
+
+1. **Professor Messer** - Certifications
+2. **The Cyber Mentor** - Ethical hacking
+3. **NetworkChuck** - Easy explanations
+4. **John Hammond** - Walkthroughs
+5. **LiveOverflow** - Deep technical
+6. **IppSec** - HTB Walkthroughs
+7. **Stok** - Web security
+8. **SecurityFWD** - Career advice
+
+### **🏆 CTF & Challenges**
+
+- [TryHackMe](https://tryhackme.com) - Interactive labs
+- [Hack The Box](https://hackthebox.com) - Real machines
+- [Vulnhub](https://vulnhub.com) - Download VMs
+- [PicoCTF](https://picoctf.org) - Beginner CTF
+- [OverTheWire](https://overthewire.org) - Wargames
+
+### **💼 Job Boards**
+
+- [Indeed](https://indeed.com)
+- [LinkedIn](https://linkedin.com)
+- [CyberSeek](https://www.cyberseek.org)
+- [Dice](https://www.dice.com)
+- [Cybersecurity Jobs](https://jobs.github.com)
 
 ---
 
-## 📞 Yordamga Muhtoj?
+## 🎖️ BADGES VA METRICS
 
-- **GitHub Discussions**: Savollar sorang
-- **Reddit**: r/cybersecurity, r/learnprogramming
-- **Discord**: NetworkChuck, TryHackMe communities
-- **Twitter**: Security experts'dan foydalanish qiling (#cybersecurity)
+```
+🏅 Tayyorlik Bosqichlari:
+
+▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░  10% - Yangilandi
+▓▓▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░  15% - Video'lar ko'rildi
+▓▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░░░░░  20% - Lab 1-5 tugatildi
+▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░░░  25% - Networking bosqichi
+▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░░░  40% - Fundamentals complete
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░  50% - Yarimyoliga keldi!
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░  60% - Security+ level
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░  75% - Intermediate level
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░  80% - HTB Level 3
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░  90% - Advanced level
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 100% - 90-Day Complete! 🎉
+```
 
 ---
 
-**Muvaffaq bo'lishni istaymiz! 🚀 Kiberxavfsizlikda karera qurish - bu yanada mumkin emas!**
+## 📋 HAFTALIK CHALLENGE
+
+### **1-HAFTA CHALLENGE: LINUX MASTERCLASS**
+
+```
+📝 Vazifa:
+├─ Terminal'dan 20 ta command'ni o'rganing
+├─ 5 ta file o'zgartirish operatsiyasi
+├─ User management operatsiyasi
+├─ Directory navigatsiya test
+└─ Shell script yozish
+
+✅ Muvaffaq: Scriptni GitHub'ga push qiling
+⏰ Vaqt: 7 kun
+```
+
+### **2-HAFTA CHALLENGE: NETWORK ANALYSIS**
+
+```
+📝 Vazifa:
+├─ 10 ta pcap faylni tahlil qiling
+├─ Malicious traffic identifikatsiya qiling
+├─ Network protocols identify qiling
+├─ Traffic patterns report yozib qo'ying
+└─ Findings'ni GitHub Wiki'ga yozib qo'ying
+
+✅ Muvaffaq: Analysis report yaratish
+⏰ Vaqt: 7 kun
+```
+
+### **3-HAFTA CHALLENGE: WEB SECURITY**
+
+```
+📝 Vazifa:
+├─ OWASP Top 10 barcha 10'ni tushunish
+├─ Burp Suite bilan 5 ta vulnerability topish
+├─ SQL Injection attack sinovlash
+├─ XSS payload yaratish
+└─ Report tayyorlash
+
+✅ Muvaffaq: OWASP Quiz 80%+ oqish
+⏰ Vaqt: 7 kun
+```
+
+### **4-HAFTA CHALLENGE: TryHackMe Level Up**
+
+```
+📝 Vazifa:
+├─ TryHackMe'dan 5 ta intermediate room o'tkazish
+├─ Har room uchun write-up yozish
+├─ Techniques'ni note qo'lish
+├─ Screenshots'ni collect qilish
+└─ Personal writeup blog'da share qilish
+
+✅ Muvaffaq: Blog post yaratish + GitHub
+⏰ Vaqt: 7 kun
+```
 
 ---
 
-*Oxirgi yangilandi: 2026-10-12*
-*Til: O'zbek (Uzbek)*
-*Maqsad: Boshlang'ichlardan advanced'larga qadar cybersecurity o'quvchilar*
+## 📞 YORDAMGA MUHTOJ?
+
+### **Bu Repo'da Muammo Topsangiz:**
+- 🐛 GitHub Issues'da post qiling
+- 💬 GitHub Discussions'da surol sorang
+- 🔗 Pull request bilan o'zgarish taqdim eting
+
+### **Umumiy Cybersecurity Savollar:**
+- 📘 Stack Overflow
+- 🎥 YouTube Comment
+- 💬 Reddit r/cybersecurity
+- 🐦 Twitter #cybersecurity
+
+### **Karera Maslahatlar:**
+- 👨‍💼 LinkedIn MessageMe
+- 📧 Email community leads
+- 🎤 Local meetups ga borish
+- 🤝 Mentorship programs
+
+---
+
+## 📄 LICENSE
+
+MIT License - Bepul foydalanish uchun
+
+---
+
+## 🌟 MUVAFFAQIYAT TILAYMIZ! 🚀
+
+**Kiberxavfsizlikka xush kelibsiz!**
+
+- 👨‍💻 Boshlang'ichi bo'lsangiz: Week 1 dan boshlang
+- 🎯 Maxsus maqsading bo'lsa: Yuqorida yo'lingizni toping
+- 💪 Davom eting va birlashtirib qo'ying - siz buni qila olasiz!
+
+---
+
+**Oxirgi yangilandi:** 2026-10-12  
+**Til:** O'zbek (Uzbek)  
+**Tarjimon:** Shokh-Hacker  
+**Bosh Manbalar:** 90DaysOfCyberSecurity, TryHackMe, HTB
+
+---
+
+*Ushbu reponi ⭐ qo'ying agar foydali bo'lsa!*
